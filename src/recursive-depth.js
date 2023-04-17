@@ -18,7 +18,7 @@ class DepthCalculator {
       for(let el of arr){
         if(Array.isArray(el)){
           let arrDepth = this.calculateDepth(el);
-          if(depth > arrDepth){
+          if(depth < arrDepth){
             depth = arrDepth;
           }
         }
